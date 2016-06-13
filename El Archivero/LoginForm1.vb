@@ -2,7 +2,7 @@
 Imports System.Data.Sql
 Imports System.Data.SqlClient
 
-Public Class LoginForm1
+Public Class Login
 
     ' TODO: inserte el código para realizar autenticación personalizada usando el nombre de usuario y la contraseña proporcionada 
     ' (Consulte http://go.microsoft.com/fwlink/?LinkId=35339).  
@@ -13,7 +13,8 @@ Public Class LoginForm1
     ' como el nombre de usuario, nombre para mostrar, etc.
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
-        Me.Close()
+        Login.Close()
+        Form1.Show()
     End Sub
 
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
