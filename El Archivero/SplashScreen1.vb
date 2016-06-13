@@ -31,19 +31,17 @@
         'Información de Copyright
         Copyright.Text = My.Application.Info.Copyright
 
-        Try
-            If Timer1.Enabled = False Then
-                Timer1.Enabled = True
-            Else
-                Timer1.Enabled = True
-            End If
-            Login.Show()
-            Me.Hide()
-        Catch ex As Exception
-            MsgBox(ex.Message, vbInformation, vbOK)
-        End Try
-
-
+        'Try
+        'If Timer1.Enabled = False Then
+        'Timer1.Enabled = True
+        'Else
+        'Timer1.Enabled = True
+        'End If
+        'Login.Show()
+        'Me.Hide()
+        'Catch ex As Exception
+        'MsgBox(ex.Message, vbInformation, vbOK)
+        'End Try
 
     End Sub
 
