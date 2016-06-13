@@ -27,12 +27,14 @@ Partial Class SplashScreen1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen1))
         Me.MainLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.DetailsLayoutPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.Version = New System.Windows.Forms.Label()
         Me.Copyright = New System.Windows.Forms.Label()
         Me.ApplicationTitle = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.MainLayoutPanel.SuspendLayout()
         Me.DetailsLayoutPanel.SuspendLayout()
         Me.SuspendLayout()
@@ -108,6 +110,10 @@ Partial Class SplashScreen1
         Me.ApplicationTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.ApplicationTitle.UseMnemonic = False
         '
+        'Timer1
+        '
+        Me.Timer1.Interval = 1000
+        '
         'SplashScreen1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -127,4 +133,5 @@ Partial Class SplashScreen1
 
     End Sub
 
+    Friend WithEvents Timer1 As Timer
 End Class
