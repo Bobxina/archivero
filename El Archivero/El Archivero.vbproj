@@ -89,6 +89,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ArchiveroDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="conexion.vb" />
     <Compile Include="inicio.vb">
       <SubType>Form</SubType>
     </Compile>
